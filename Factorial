@@ -1,0 +1,51 @@
+//Without Recursion
+
+import java.util.*;
+import java.io.*;
+
+class HelloWorld
+{
+    
+    public static void main(String args[])
+    {
+        int count;
+        Scanner s=new Scanner(System.in);
+        count=s.nextInt();
+        int fact=1;
+        for(int i=count;i>=1;i--)
+            {
+                fact*=i;
+            }
+        System.out.println(fact);
+        
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//With Recursion
+
+
+import java.util.*;
+import java.io.*;
+
+class HelloWorld
+{
+    public static int Factorial(int num)
+    {
+        if(num==0)
+            return 1;
+        else
+            return num*Factorial(num-1);
+    }
+    
+    public static void main(String args[])
+    {
+        int count;
+        Scanner s=new Scanner(System.in);
+        count=s.nextInt();
+        System.out.println(Factorial(count));
+        
+    }
+}
