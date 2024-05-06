@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.*;
+
+class HelloWorld
+{
+    
+    public static void main(String args[])
+    {
+        String str;
+        Scanner sc=new Scanner(System.in);
+        str=sc.nextLine();
+        char str1[]=str.toCharArray();
+        HashMap<Character,Integer> map=new HashMap<Character,Integer>();
+        for(char j:str1)
+        {
+            if(map.containsKey(j))
+                map.put(j,map.get(j)+1);
+                
+            else
+                map.put(j,1);
+                
+        }
+        Set<Character> keys=map.keySet();
+        for(Character ch:keys)
+        {
+            if(map.get(ch)>1)
+                System.out.println(ch+" "+map.get(ch));
+        }
+ 
+    }
+}
