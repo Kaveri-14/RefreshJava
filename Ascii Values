@@ -1,0 +1,35 @@
+Method 1:
+
+import java.util.*;
+import java.io.*;
+
+class HelloWorld
+{
+    
+    public static void main(String args[])
+    {
+        int character1='a';
+        int character2='c';
+        System.out.println(character1+" "+character2);
+        
+    }
+}
+
+Method 2:
+
+import java.util.*;
+import java.io.*;
+
+class HelloWorld
+{
+    
+    public static void main(String args[])
+    {
+        char x='a';
+        char y='c';
+        int ascii1=(int)x;
+        int ascii2=(int)y;
+        System.out.println(ascii1+" "+ascii2);
+        
+    }
+}
