@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+class HelloWorld {
+    
+    
+    public static void main(String[] args) {
+        
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int[] nums=new int[n];
+        for(int i=0;i<n;i++)
+            nums[i]=sc.nextInt();
+        HashMap<Integer,Integer> map=new HashMap<Integer,Integer>();
+        for(int i:nums)
+        {
+            if(map.containsKey(i))
+                map.put(i,map.get(i)+1);
+            else
+                map.put(i,1);
+                
+        }
+        Set<Integer> Keys=map.keySet();
+        for(int i:Keys)
+            {
+                if(map.get(i)>1)
+                    System.out.println(i+" ");
+            }
+            
+        
+    }
+}
+
