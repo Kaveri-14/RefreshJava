@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+class HelloWorld {
+    
+    
+    public static void main(String[] args) {
+        
+        int temp,n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();  
+        int nums[]=new int[n];
+        for(int i=0;i<n;i++)
+            nums[i]=sc.nextInt();
+        int max=0;
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]>max)
+                max=nums[i];
+        }
+        
+            System.out.print(max);
+}
+}
+
