@@ -1,0 +1,20 @@
+
+import java.io.*;
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int[] Arrays=new int[n];
+        for(int i=0;i<n;i++)
+            Arrays[i]=sc.nextInt();
+        int summ=0;
+        for(int i=0;i<n;i++)
+            {
+                summ+=Arrays[i];
+            }
+        System.out.println(summ);
+    }
+}
