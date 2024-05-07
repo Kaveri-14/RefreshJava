@@ -1,0 +1,26 @@
+//JavacharArray=sc.next().toCharArray(); ----->to get user input 
+I/P--->
+Sand
+O/P--->
+S
+a
+n
+d
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import java.io.*;
+import java.util.*;
+class HelloWorld {
+    
+    
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        
+        char[] JavacharArray=new char[100];
+        JavacharArray=sc.next().toCharArray();
+        for(int i=0;i<JavacharArray.length;i++)
+            System.out.println(JavacharArray[i]);
+    }
+}
+
