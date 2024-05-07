@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int num1,num2,temp;
+        Scanner sc=new Scanner(System.in);
+        num1=sc.nextInt();
+        num2=sc.nextInt();
+        temp=num1;
+        num1=num2;
+        num2=temp;
+        int result=num1+num2;
+        System.out.println("Sum of 2 numbers:"+result);
+        System.out.println("Swap of numbers:"+num1+" "+num2);
+        int n,summ=0;
+        n=sc.nextInt();
+        for(int i=0;i<=n;i++)
+            summ+=i;
+        System.out.println("Sum of natural numbers:"+summ);
+        
+        for(int i=1;i<=100;i++)
+        {
+            if(i%2==1)
+                System.out.println("Odd numbers:"+i);
+        }
+    
+    }
+}
